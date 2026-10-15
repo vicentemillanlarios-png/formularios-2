@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+<h1>Tipos de imput</h1>
+<form>
+<fieldset>
+    <legend>Datos personales</legend>
+    <p>
+        Nombre:
+        <input type="text" name="nombre" size="25">
+    </p>
+    <p>
+        Contraseña:
+        <input type="password" name="contrasena" size="25">
+    </p>
+    <p>
+        Hombre:
+        <input type="radio" name="sexo" value="hombre" checked>
+        Mujer:
+        <input type="radio" name="sexo" value="mujer">
+    </p>
+    <p>
+        Fumador:
+        <input type="checkbox" name="fumador">
+    </p>
+    </fieldset>
+    <p>
+        Provincia:
+        <select name="provincia">
+        <option>Toledo</option>
+        <option>Ciudad Real</option>
+        <option>Albacete</option>
+        <option>Cuenca</option>
+        <option>Guadalajara</option>
+        </select>
+    </p>
+    <p>
+        Observaciones:
+        <textarea name="observaciones" rows="6" cols="15"
+        placeholder="Escriba algo..."></textarea>
+    </p>
+    <p>
+        Color:
+        <input type="color" name="color" value="#000000">
+    </p>
+    <p>
+        Fecha de Nacimiento:
+        <input type="date" name="fecha">
+    </p>
+    <p>
+        Edad:
+        <input type="number" name="edad" min="0" max="120" size="5">
+    </p>
+    <p>
+        Email:
+        <input type="email" name="email" size="30">
+    </p>
+    <p>
+        Adjuntar foto:
+        <input type="file" name="foto" accept="image/*">
+    </p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="reiniciar formulario">
+</form>
+</body>
+</html>
